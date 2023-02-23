@@ -1,15 +1,19 @@
 #include "main.h"
-#include <ctype.h>
-/**
- *_islower - Entry
- *@c: accept input from stdin
- *Return: (0) SUCCESS, (1) FAILURE
- */
 
+/**
+ * _islower - checks for lowercase character.
+ * @c: integer parameter to check
+ * Return: 1 if c is lowercase 0 otherwise
+*/
 int _islower(int c)
 {
-	if (islower(c))
-	return (1);
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
 	else
-	return (0);
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
